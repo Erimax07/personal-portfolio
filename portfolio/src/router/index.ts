@@ -5,8 +5,8 @@ import ProjectFrame from '@/views/ProjectFrame.vue';
 
 const routes = [
     { path: '/', component:  Dashboard},
-    { path: '/about', component: About },
-    { path: '/projectFrame', component: ProjectFrame },
+    { path: '/about', component: About},
+    { path: '/projectFrame/:id', component: ProjectFrame },
   ]
 
 const router = createRouter({

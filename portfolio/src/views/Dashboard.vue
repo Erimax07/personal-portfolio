@@ -20,6 +20,7 @@ const projects = ref(projectStore.projects)
 
 
 interface linkInterface{
+        id:number,
         name: string,
         description: string,
         url: string,

@@ -6,14 +6,21 @@ export default defineComponent({
     props: {
         // Define props if needed
     },
-    setup() {
-        // Add any setup logic if required
-    },
+    
 });
 </script>
+<script setup lang="ts">
+import { ref } from 'vue';
+import ProjectLink from '@/components/ProjectLink.vue';
+import { useProjectStore } from '@/stores';
 
+
+const projectStore = useProjectStore()
+const id = $route.params.id
+</script>
 <template>
-<iframe src="https://inspiring-heliotrope-5dd8cc.netlify.app/" width="100%" height="100%"></iframe>        
+<iframe :src="projectStore.returnById($route.params.id).url" width="100%" height="100%"></iframe>        
+
 </template>
 
 <style>

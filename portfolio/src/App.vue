@@ -10,7 +10,7 @@ import ProjectFrame from './views/ProjectFrame.vue';
       <h1><RouterLink to="/">Portfolio</RouterLink></h1>
       <div class="buttons">
         <RouterLink to="/About">About</RouterLink>
-        <RouterLink to="/projectFrame">Describtion</RouterLink>
+        <RouterLink to="/projectFrame/:1">Describtion</RouterLink>
         <RouterLink to="/Transactions">Home</RouterLink>
 
       </div>

@@ -5,7 +5,7 @@
             <h2>{{ project.name }}</h2>
             <p>{{ project.description }}</p>
         </div>
-        <img src="C:\Users\Erik\Documents\WebDev\personal-portfolio\portfolio\src\assets\portfolio.jpeg" alt="Project Image" class="project-image" />
+        <img src="" alt="Project Image" class="project-image" />
     </div>
     </a>
 </template>
