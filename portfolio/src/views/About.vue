@@ -24,6 +24,9 @@
         </p>
         <h2>Contact</h2>
         <p>
+            Phone: <a href="tel:+4915259612600">+49 1525 9612600</a>
+        </p>
+        <p>
             Feel free to reach out to me at <a href="mailto:gawerimax@gmail.com">gawerimax@gmail.com</a>
             or connect with me on <a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn</a>.
         </p>

@@ -10,24 +10,23 @@ import ProjectFrame from './views/ProjectFrame.vue';
       <h1><RouterLink to="/">Portfolio</RouterLink></h1>
       <div class="buttons">
         <RouterLink to="/About">About</RouterLink>
-        <RouterLink to="/projectFrame/:1">Describtion</RouterLink>
+        <RouterLink to="/projectFrame/0">Describtion</RouterLink>
         <RouterLink to="/Transactions">Home</RouterLink>
 
       </div>
     </nav>
+    <hr>
+    
     <RouterView />
-  
+    <footer>
+      <p>© 2023 My Portfolio. All rights reserved.</p>
+      <router-link to="/impresum">Impressum</router-link>
+    </footer>
 
 </template>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
+
 
  nav {
   position: sticky;
@@ -52,9 +51,21 @@ h1 > * {
   text-decoration: none;
 }
 
+footer {
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #838080;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 1rem;
   margin: 0.5rem 1rem;
 }

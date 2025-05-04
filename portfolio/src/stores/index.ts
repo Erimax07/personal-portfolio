@@ -10,8 +10,8 @@ export const useProjectStore = defineStore('counter', () => {
         icon: string
     }
     const projects = ref([
-        { id:0, name: 'Mandelbrot Generator', description: 'Generates visual representations of the Mandelbrot set, a complex mathematical fractal.', url: 'https://inspiring-heliotrope-5dd8cc.netlify.app/', icon: '@assets/mandelbrot.jpeg' },
-        { id:1, name: 'Project 2', description: 'Description 2', url: 'https://youtu.be/dQw4w9WgXcQ?si=60kpXSDz_EK9HRwN', icon: 'icon2' },
+        { id:0, name: 'Mandelbrot Generator', description: 'Generates visual representations of the Mandelbrot set, a complex mathematical fractal.', url: 'https://inspiring-heliotrope-5dd8cc.netlify.app/', icon: '../assets/mandelbrot.jpeg' },
+        { id:1, name: 'Connect Four Game', description: 'A classic Connect Four game where players take turns dropping discs to form a line of four.', url: 'https://4-gewinnt-4785.netlify.app/', icon: 'icon2' },
         { id:2, name: 'Project 3', description: 'Description 3', url: 'https://youtu.be/dQw4w9WgXcQ?si=60kpXSDz_EK9HRwN', icon: 'icon3' },
     ]);
 
