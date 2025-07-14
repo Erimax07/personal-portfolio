@@ -11,7 +11,7 @@ import ProjectFrame from './views/ProjectFrame.vue';
       <div class="buttons">
         <RouterLink to="/About">About</RouterLink>
         <RouterLink to="/projectFrame/0">Describtion</RouterLink>
-        <RouterLink to="/Transactions">Home</RouterLink>
+        <RouterLink to="/Home">Home</RouterLink>
 
       </div>
     </nav>

@@ -1,5 +1,6 @@
 <template>
     <div class="about">
+        <Test :myid="1" />
         <h1>About Me</h1>
         <p>
             Hello! My name is Erik Matschke, and I am a passionate web developer with a love for creating
@@ -35,9 +36,16 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Frame from "@/views/Frame.vue";
+
+
+
+
+
 
 export default defineComponent({
     name: "About",
+  components: {Test: Frame},
     props: {
         // Define props if needed
     },

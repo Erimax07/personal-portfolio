@@ -6,11 +6,8 @@
       ProjectLink
     </div>
     <div class="procectList">
-      <ProjectLink
-        v-for="(item, index) in projects"
-        :key="index"
-        :project="item"
-      />
+
+
     </div>
   </div>
 </template>
@@ -19,6 +16,7 @@
 import { ref } from "vue";
 import ProjectLink from "@/components/ProjectLink.vue";
 import { useProjectStore } from "@/stores";
+import ProjectFrame from "@/views/ProjectFrame.vue";
 
 const projectStore = useProjectStore();
 const projects = ref(projectStore.projects);

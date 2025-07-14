@@ -4,9 +4,7 @@ import { useRoute } from "vue-router";
 
 export default defineComponent({
   name: "Frame",
-  props: {
-    // Define props if needed
-  },
+
 });
 </script>
 <script setup lang="ts">
@@ -14,10 +12,19 @@ import { ref } from "vue";
 import ProjectLink from "@/components/ProjectLink.vue";
 import { useProjectStore } from "@/stores";
 
+const props = defineProps<{
+  myid: number
+}>();
+
+
+console.log(props);
+
+
 const projectStore = useProjectStore();
 const route = useRoute();
 const id = parseInt(route.params.id as string);
-
+console.log("Id:")
+console.log();
 const project = ref(projectStore.returnById(id));
 const projectURL = ref(project.value.url);
 console.log(projectURL, id);
@@ -25,6 +32,8 @@ console.log(projectURL, id);
 
 <template>
   <div class="page">
+    <div>Project ID: {{ myid }}</div>
+    Hi
     <div class="project-frame">
       <h1>{{ project.id }} : {{ project.name }}</h1>
       <p>{{ project.description }}</p>
@@ -38,7 +47,9 @@ console.log(projectURL, id);
       Project URL: <a :href="projectURL">{{ projectURL }}</a>
       
     </p>
+
   </div>
+
 </template>
 
 <style>
